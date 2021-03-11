@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title> List Page </title>
+
+   <style>
+        .flex-container {
+            display: flex;
+            flex-direction: row;
+            background-color:rgb(252, 248, 14);
+        }
+        
+        .flex-container>div {
+            background-color: #f1f1f1;
+            margin: 10px;
+            padding: 20px;
+            font-size: 30px;
+        }
+        #button{background-color: #0de4b5;
+        width: 150px;
+        height:50px;
+        font-weight: bold;}
+
+        
+        
+        @media (max-width: 600px) {
+            .flex-container {
+                flex-direction: column;
+                background-color: rgb(48, 211, 211);
+        
+            }
+        }
+    </style>
+</head>
+<body>
+    <h1 class="text-dark"> builds a list by Akanksha Sudhagoni </h1>
+    <label for="text" id="12" style= "font-size:25px";> Enter a word </label>
+    <input type="text" id="text" name="form1_text"> <br>
+    <br>
+
+    <div class="flex-container" id="target">
+        <div class="listy"> item 1</div>
+        <div class="listy"> item 2</div>
+        <div class="listy"> item 3</div>
+    </div>
+
+    <p> <b> click the button to add the  row item </b>
+    </p>
+    <button onclick="makeNewDiv()" id="button"> Add one </button>
+
+    <
